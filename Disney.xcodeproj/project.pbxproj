@@ -43,8 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		671834E426B049EA00FA0A8C /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
 		671834E526B05CCD00FA0A8C /* ComicViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewModelTests.swift; sourceTree = "<group>"; };
+		671834EA26B077F000FA0A8C /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		6766682326AFAF6200C68B11 /* MarvelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelError.swift; sourceTree = "<group>"; };
 		6766682526AFBAEA00C68B11 /* ComicsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicsManagerTests.swift; sourceTree = "<group>"; };
 		67D5DE4026ADDA2D00809EF6 /* Disney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Disney.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,7 +96,7 @@
 		67D5DE3726ADDA2D00809EF6 = {
 			isa = PBXGroup;
 			children = (
-				671834E426B049EA00FA0A8C /* ReadMe.rtf */,
+				671834EA26B077F000FA0A8C /* ReadMe.md */,
 				67D5DE4226ADDA2D00809EF6 /* Disney */,
 				67D5DE5926ADDA3100809EF6 /* DisneyTests */,
 				67D5DE6426ADDA3100809EF6 /* DisneyUITests */,
