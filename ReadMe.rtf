@@ -1,0 +1,124 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red61\green61\blue61;\red255\green255\blue255;\red184\green14\blue61;
+\red247\green238\blue241;\red52\green52\blue52;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c30588\c30588\c30588;\cssrgb\c100000\c100000\c100000;\cssrgb\c78039\c14510\c30588;
+\cssrgb\c97647\c94902\c95686;\csgray\c26515;\csgenericrgb\c100000\c100000\c100000;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww35640\viewh21280\viewkind0
+\deftab720
+\pard\pardeftab720\qc\partightenfactor0
+
+\f0\b\fs72 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Disney app
+\f1\b0\fs60 \
+\pard\pardeftab720\partightenfactor0
+
+\fs24 \cf2 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs48 \cf2 \cb3 General info
+\f1\b0\fs24 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \cb3 This project target iPhone and iPad devices only and was created for the Disney interview process. The requirements were: \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	1.	}Use Marvel\'92s Developer API <developer.marvel.com>\
+{\listtext	2.	}Take one comic ID and display: comic book title, description and cover image\
+{\listtext	3.	}Implement at least one UI and unit test\
+{\listtext	4.	}Upload code to GitHub/Gitlab or something equivalent and provide link and README file\
+{\listtext	5.	}Specify which libraries you have used\
+{\listtext	6.	}Specify how to add your developer keys
+\fs35\fsmilli17600 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs48 \cf2 Get started
+\f1\b0\fs60 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \
+This project was kept as simple as possible so it can be easy for the reviewer(s) to compile and review the code without having to setup anything. Therefore there is no external library used. All you need to do is open the project on Xcode and change the Team in the Signing and Capabilities in each target. This project was created with Xcode 12.5.1.\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs48 \cf2 Discussion
+\f1\b0\fs60 \
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \
+The project uses a simple MVVM architecture along with Combine framework (This is my first time using Combine for this purpose).\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf4 \cb5 \expnd0\expndtw0\kerning0
+Constants.swift\cf2 \cb3  file allows you to modify the comic Id that is displayed on screen and the Marvel API public/private keys. 
+\fs60 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\fs35\fsmilli17600 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+MarvelService.swift\cf2 \cb3  is a generic class that allow the application to make API calls with Marvel API using URLSession.\
+\ls2\ilvl0
+\fs35\fsmilli17600 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+ComicsManager.swift\cf2 \cb3  utilize MarvelService class to retrieve a comic given a comic Id.\
+\ls2\ilvl0
+\fs35\fsmilli17600 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+Comic.swift\cf2 \cb3  represent a comic. To prevent nested data and to show that I\'92m familiar with Decodable, I customized the parsing process.\
+\ls2\ilvl0
+\fs35\fsmilli17600 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+MarvelError.swift\cf2 \cb3  is a very basic way to retrieve and display the errors from the API calls.\
+\ls2\ilvl0
+\fs35\fsmilli17600 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}
+\fs32 \cf4 \cb5 \expnd0\expndtw0\kerning0
+MainStoryboard\cf2 \cb3  was used because the UI was simple and therefore it was convenient to use Storyboard. Content is inside a scrollview in case the texts are too long to fit in the screen.\
+\pard\tx560\pardeftab720\partightenfactor0
+
+\fs35\fsmilli17600 \cf2 \
+If you want me to make any changes to this project (use different libraries, architecture, design pattern etc) please let me know and I will make the changes.\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs48 \cf2 Unit / UI testing\
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs32 \cf2 \
+Base on the requirements, I created couple Unit tests but also Integration and UI testing. 
+\f0\b\fs48 \
+\pard\tx220\tx720\pardeftab642\li720\fi-720\pardirnatural\partightenfactor0
+\ls3\ilvl0
+\f1\b0\fs32 \cf6 \cb7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf4 \cb5 \expnd0\expndtw0\kerning0
+MarvelServiceTests.swift \cf6 \cb7 \kerning1\expnd0\expndtw0  contains a simple unit test.
+\f0\b\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab642\li720\fi-720\pardirnatural\partightenfactor0
+\ls4\ilvl0
+\f1\b0\fs32 \cf6 \cb7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf4 \cb5 \expnd0\expndtw0\kerning0
+ComicsManagerTests.swift \cf6 \cb7 \kerning1\expnd0\expndtw0  contains an integration test (load the comic from backend).
+\f0\b\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\ls4\ilvl0
+\f1\b0\fs32 \cf6 \cb7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf4 \cb5 \expnd0\expndtw0\kerning0
+ComicsManagerTests.swift \cf6 \cb7 \kerning1\expnd0\expndtw0  contain tests for the viewModel state mocking the API response.
+\f0\b\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\pardeftab642\li720\fi-720\pardirnatural\partightenfactor0
+\ls5\ilvl0
+\f1\b0\fs32 \cf6 \cb7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf4 \cb5 \expnd0\expndtw0\kerning0
+DisneyUITests.swift \cf6 \cb7 \kerning1\expnd0\expndtw0  contains a very simple UI testing just to check the comic title and description (It does not mock the API response and if the comicId change in the constant file, it will fails the testing).}
